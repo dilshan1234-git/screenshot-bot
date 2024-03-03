@@ -7,7 +7,7 @@ class Config:
     API_HASH = os.environ.get("aa7c2b3be68a7488abdb9de6ce78d311")
     BOT_TOKEN = os.environ.get("6898599695:AAE-rukB-OoPJgxOOOcKKuK_8gv55HiC4ww")
     SESSION_NAME = os.environ.get("SESSION_NAME", ":memory:")
-    LOG_CHANNEL = int(os.environ.get("-1002106332206"))
+    LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1002106332206")
     DATABASE_URL = os.environ.get("mongodb+srv://dilfilter123:dilfilter123@cluster0.tq9uv2k.mongodb.net/?retryWrites=true&w=majority")
     AUTH_USERS = [int(i) for i in os.environ.get("AUTH_USERS", "5380833276").split(" ")]
     MAX_PROCESSES_PER_USER = int(os.environ.get("MAX_PROCESSES_PER_USER", 2))
